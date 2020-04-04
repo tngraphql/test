@@ -24,10 +24,21 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Set up MySQL 5.7
+      uses: actions/checkout@v2
+      with:
+        mysql version: 5.7
+        mysql database: test
+        mysql root password: password
+
     - uses: actions/checkout@v2
       name: test code
     - run: npm install
     - run: npm run-script test
       env:
-        DB_NAME: nguyen
-        DB_PASSWORD: 123456
+        MYSQL_HOST: localhost
+        MYSQL_PORT: 3306
+        DB_NAME: test
+        MYSQL_USER: root
+        MYSQL_PASSWORD: password
