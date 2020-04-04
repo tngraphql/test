@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": [
+            "es2018",
+            "es2017",
+            "es2015",
+            "dom",
+            "es6"
+        ],
+        "types": [
+            "node"
+        ],
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDirs": [
+            "./"
+        ],
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+
+        "baseUrl": "types",
+        "typeRoots": [
+            "./typings"
+        ],
+        "allowJs": true, // auto compie js
+        "sourceMap": false,
+        "declaration": true // build file.d.ts
+    },
+    "include": [
+        "src/**/*",
+        "typings/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

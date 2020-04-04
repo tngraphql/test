@@ -1,0 +1,32 @@
+{
+  "name": "@tngraphql/test",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@adonisjs/logger": "^1.1.9",
+    "@adonisjs/profiler": "^2.0.0",
+    "@adonisjs/router": "^1.5.9",
+    "@types/node": "^13.9.2",
+    "graphql": "^14.6.0",
+    "magical-mixin": "^0.1.0",
+    "pino": "^5.17.0",
+    "pino-datadog": "^1.1.2",
+    "pino-multi-stream": "^4.3.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^8.6.2",
+    "type-graphql": "^0.17.6",
+    "typescript": "^3.8.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "description": ""
+}
