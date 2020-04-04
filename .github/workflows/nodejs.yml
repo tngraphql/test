@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: [ubuntu-latest, window-latest]
+    runs-on: [ubuntu-latest, windows-latest]
 
     strategy:
       matrix:
@@ -24,8 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
+    - uses: actions/checkout@v2
     - name: test code
+    - run: npm install
     - run: npm run-script test
       env:
         DB_NAME: nguyen
