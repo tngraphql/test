@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - name: Set up MySQL 5.7
-      uses: mirromutth/mysql-action@master
+      uses: mirromutth/mysql-action@v1.1
       with:
         host port: 3800 # Optional, default value is 3306. The port of host
         container port: 3307 # Optional, default value is 3306. The port of container
