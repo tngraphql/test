@@ -9,11 +9,11 @@
  */
 import * as knex from 'knex'
 
-process.env.MYSQL_HOST = 'localhost';
-process.env.MYSQL_PORT = '3306';
-process.env.DB_NAME = 'lucid';
-process.env.MYSQL_USER = 'root';
-process.env.MYSQL_PASSWORD = '123123As';
+// process.env.MYSQL_HOST = 'localhost';
+// process.env.MYSQL_PORT = '3306';
+// process.env.DB_NAME = 'lucid';
+// process.env.MYSQL_USER = 'root';
+// process.env.MYSQL_PASSWORD = '123123As';
 
 const db = knex({
     client: 'mysql',
